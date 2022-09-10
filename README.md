@@ -17,6 +17,6 @@ The api for getting the dog images: https://dog.ceo/api/breeds/image/random<br/>
 Deadline: 10 Sept 2022 Sunday 10:00 AM.<br/>
 Deliverable: GitHub Repo Link (You have to create a branch and keep on pushing to it, before submitting you have to merge to the main branch)<br/>
 
-Figma exported design for the project
+Figma exported design for the project (created by me)
 
 <img src='./src/prediction.png'>
