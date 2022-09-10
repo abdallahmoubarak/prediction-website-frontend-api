@@ -115,3 +115,10 @@ body {
 .card-button:hover {
   background: #00b3ff;
 }
+
+.card-data-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 2rem 1rem;
+}
