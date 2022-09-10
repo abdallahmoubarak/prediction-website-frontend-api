@@ -6,4 +6,13 @@ window.addEventListener("DOMContentLoaded", () => {
   fetch("https://dog.ceo/api/breeds/image/random")
     .then((response) => response.json())
     .then((data) => (document.getElementById("dogImg").src = data.message));
+
+  btn.addEventListener("click", () => {
+    var name = document.getElementById("card-input").value;
+
+    // fetching age for the input name
+    fetch(`https://api.agify.io/?name=${name}`)
+      .then((response) => response.json())
+      .then((data) => (document.getElementById("age").innerHTML = data.age));
+  });
 });
