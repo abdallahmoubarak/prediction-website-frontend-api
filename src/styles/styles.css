@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
   border-radius: 3rem;
   background: white;
   border: 1px solid #00b3ff;
-  box-shadow: 0px 0px 69px #00b3ff;
+  box-shadow: 0px 0px 1rem #00b3ff;
   border-radius: 3rem;
   -webkit-border-radius: 3rem;
   -moz-border-radius: 3rem;
@@ -25,6 +26,25 @@ body {
   -o-border-radius: 3rem;
   overflow: hidden;
   font-size: 1.4rem;
+  transition: 0.2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+}
+
+.card:hover {
+  transform: translateY(1rem);
+  transition: 0.2s ease-out;
+  box-shadow: 0px 0px 2rem #00b3ff;
+  -webkit-transform: translateY(1rem);
+  -moz-transform: translateY(1rem);
+  -ms-transform: translateY(1rem);
+  -o-transform: translateY(1rem);
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
 }
 .card-header {
   position: relative;
@@ -44,4 +64,54 @@ body {
   -moz-transform: translate(-5rem, -8rem);
   -ms-transform: translate(-5rem, -8rem);
   -o-transform: translate(-5rem, -8rem);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.card-input-title {
+  padding: 0rem 1rem;
+}
+
+.card-input {
+  font-size: 1.2rem;
+  border: 1px solid #00b3ff;
+  padding: 0.6rem 1rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.card-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+}
+.card-button {
+  border: none;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  color: white;
+  background: #4ac9ff;
+  padding: 0.4rem 1.6rem;
+  margin: auto;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background: #00b3ff;
 }
