@@ -134,6 +134,7 @@ body {
   right: 0;
   width: 12rem;
   height: 12rem;
+  overflow: hidden;
   transform: translate(1.5rem, -2rem);
   -webkit-transform: translate(1.5rem, -2rem);
   -moz-transform: translate(1.5rem, -2rem);
