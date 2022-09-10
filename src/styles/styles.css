@@ -12,8 +12,6 @@ body {
 
 .card {
   max-width: 20rem;
-  width: 20rem;
-  height: 60vh;
   margin: 0 auto;
   border-radius: 3rem;
   background: white;
@@ -121,4 +119,24 @@ body {
   flex-direction: column;
   gap: 0.6rem;
   padding: 2rem 1rem;
+}
+
+.card-footer {
+  position: relative;
+  height: 8rem;
+}
+
+.card-footer-circle {
+  border: 1rem solid #4ac9ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12rem;
+  height: 12rem;
+  transform: translate(1.5rem, -2rem);
+  -webkit-transform: translate(1.5rem, -2rem);
+  -moz-transform: translate(1.5rem, -2rem);
+  -ms-transform: translate(1.5rem, -2rem);
+  -o-transform: translate(1.5rem, -2rem);
 }
