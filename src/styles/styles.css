@@ -148,3 +148,9 @@ body {
   -ms-transform: translate(1.5rem, -2rem);
   -o-transform: translate(1.5rem, -2rem);
 }
+
+.change {
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: gray;
+}
