@@ -32,5 +32,58 @@ window.addEventListener("DOMContentLoaded", () => {
       .then(() => {
         document.getElementById("nationality").innerHTML = nationalities;
       });
+
+    // fetching activity
+    axios.get("http://www.boredapi.com/api/activity").then((res) => {
+      document.getElementById("activity").innerHTML = res.data.activity;
+    });
+  });
+
+  // fetching location
+  axios
+    .get("https://api.ipify.org/?format=json")
+    .then((res) => (document.getElementById("ip").innerHTML = res.data.ip));
+
+  // signUp
+  document.getElementById("sign-body").style.display = "block";
+
+  // switch login
+
+  document.getElementById("switch-login").addEventListener("click", () => {
+    document.getElementById("login-body").style.display = "block";
+    document.getElementById("sign-body").style.display = "none";
+  });
+
+  // switch login
+
+  document.getElementById("switch-sign").addEventListener("click", () => {
+    document.getElementById("login-body").style.display = "none";
+    document.getElementById("sign-body").style.display = "block";
+  });
+
+  // sign up process
+  document.getElementById("sign-btn").addEventListener("click", () => {
+    var email = document.getElementById("sign-mail").value;
+    var password = document.getElementById("sign-password").value;
+
+    localStorage.setItem(email, password);
+
+    document.getElementById("sign-body").style.display = "none";
+    document.getElementById("default-body").style.display = "block";
+  });
+
+  // login process
+
+  document.getElementById("login-btn").addEventListener("click", () => {
+    var email = document.getElementById("log-mail").value;
+    var password = document.getElementById("log-password").value;
+
+    if (localStorage.getItem(email) == password) {
+      document.getElementById("login-body").style.display = "none";
+      document.getElementById("sign-body").style.display = "none";
+      document.getElementById("default-body").style.display = "block";
+    } else {
+      document.getElementById("msg").innerHTML = "You need to sign up first";
+    }
   });
 });

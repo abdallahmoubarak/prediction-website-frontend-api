@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./src/styles/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./src/js/index.js" type="text/javascript"></script>
     <title>Prediction Website</title>
   </head>
@@ -14,11 +15,56 @@
       <!-- card header -->
       <div class="card-header">
         <div class="card-header-circle"></div>
+        <h4>Your IP is:</h4>
+        <h4 id="ip"></h4>
+      </div>
+
+      <!-- card sign up part -->
+
+      <div class="card-body" id="sign-body">
+        <div class="card-input-container">
+          <div class="card-input-title">Sign Up</div>
+          <input
+            type="text"
+            class="card-input"
+            id="sign-mail"
+            placeholder="email"
+          />
+          <input
+            type="text"
+            class="card-input"
+            id="sign-password"
+            placeholder="password"
+          />
+          <button class="card-button" id="sign-btn">Sign Up</button>
+          <div class="change" id="switch-login">Alrady have account</div>
+        </div>
+      </div>
+      <!-- Login -->
+      <div class="card-body" id="login-body">
+        <div class="card-input-container">
+          <div class="card-input-title">Login</div>
+          <input
+            type="text"
+            class="card-input"
+            id="log-mail"
+            placeholder="email"
+          />
+          <input
+            type="text"
+            class="card-input"
+            id="log-password"
+            placeholder="password"
+          />
+          <button class="card-button" id="login-btn">Login</button>
+          <div class="msg" id="msg"></div>
+
+          <div class="change" id="switch-sign">I dont have an account</div>
+        </div>
       </div>
 
       <!-- card body -->
-
-      <div class="card-body">
+      <div class="card-body" id="default-body">
         <!-- input -->
         <div class="card-input-container">
           <div class="card-input-title">Your name</div>
@@ -40,6 +86,7 @@
           <div class="card-data">
             Nationality : <span id="nationality"></span>
           </div>
+          <div class="card-data">Activity : <span id="activity"></span></div>
         </div>
       </div>
 
