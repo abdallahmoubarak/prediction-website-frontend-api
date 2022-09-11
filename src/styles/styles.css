@@ -47,6 +47,8 @@ body {
 .card-header {
   position: relative;
   height: 6rem;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .card-header-circle {
@@ -108,6 +110,7 @@ body {
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
   cursor: pointer;
+  outline-color: none;
 }
 
 .card-button:hover {
@@ -119,6 +122,10 @@ body {
   flex-direction: column;
   gap: 0.6rem;
   padding: 2rem 1rem;
+}
+
+.card-data span {
+  color: #00b3ff;
 }
 
 .card-footer {

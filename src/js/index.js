@@ -32,5 +32,15 @@ window.addEventListener("DOMContentLoaded", () => {
       .then(() => {
         document.getElementById("nationality").innerHTML = nationalities;
       });
+
+    // fetching activity
+    axios.get("http://www.boredapi.com/api/activity").then((res) => {
+      document.getElementById("activity").innerHTML = res.data.activity;
+    });
   });
+
+  // fetching location
+  axios
+    .get("https://api.ipify.org/?format=json")
+    .then((res) => (document.getElementById("ip").innerHTML = res.data.ip));
 });
