@@ -46,7 +46,7 @@ body {
 }
 .card-header {
   position: relative;
-  height: 6rem;
+  height: 8rem;
   text-align: center;
   padding-top: 2rem;
 }
@@ -68,6 +68,7 @@ body {
 
 .card-body {
   padding: 1.5rem;
+  display: none;
 }
 
 .card-input-container {
@@ -153,4 +154,9 @@ body {
   font-size: 0.9rem;
   cursor: pointer;
   color: gray;
+}
+
+.msg {
+  font-size: 0.9rem;
+  color: red;
 }
